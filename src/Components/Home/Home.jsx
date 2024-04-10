@@ -38,9 +38,9 @@ const Home = () => {
           <img src={HomeBanner} alt="" />
         </div>
 
-        {products.map((product, index) => (
+        {/* {products.map((product, index) => (
           <ProductCard key={index} product={product} />
-        ))}
+        ))} */}
 
         <div className="todays">
           <div className="section-name">
