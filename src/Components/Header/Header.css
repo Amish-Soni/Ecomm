@@ -1,0 +1,28 @@
+.header {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 25px;
+}
+
+.header-text {
+  position: relative;
+  left: 350px;
+
+  .header-link {
+    font-weight: 700;
+    text-decoration: underline;
+    color: white;
+  }
+}
+
+.header-dropdown {
+  select {
+    border: none;
+    background-color: black;
+    color: white;
+  }
+}

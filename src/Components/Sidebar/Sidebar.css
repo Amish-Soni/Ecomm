@@ -1,0 +1,19 @@
+.sidebar {
+  display: flex;
+  border-right: 1px solid #dde1e6;
+  width: 200px;
+  padding-top: 50px;
+  margin-left: 167px;
+}
+
+.sidebar-list {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+.sidebar-item {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  margin-top: 16px;
+}

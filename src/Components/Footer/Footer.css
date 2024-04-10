@@ -1,0 +1,92 @@
+.footer {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer-list {
+  display: flex;
+  justify-content: space-around;
+  padding: 80px 50px;
+  gap: 90px;
+}
+
+.footer-section {
+  width: 240px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-section-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.email-input {
+  display: flex;
+  border: 1px solid white;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+  padding: 10px;
+  width: 210px;
+
+  input {
+    background-color: transparent;
+    border: none;
+    /* padding: 10px; */
+    width: 150px;
+    font-size: 18px;
+    color: white;
+  }
+  input:focus {
+    outline: none;
+  }
+
+  .arrow-icon {
+    height: 30px;
+  }
+}
+
+.download-section {
+  display: flex;
+  gap: 15px;
+}
+.special-offer {
+  color: #afafaf;
+}
+
+.qrcode-icon {
+  height: 80px;
+}
+
+.download-icon {
+  height: 35px;
+  margin-bottom: 6px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.social-icon {
+  height: 30px;
+}
+
+.footer-copyright {
+  color: #3d3d3d;
+  padding: 25px 0;
+}
+
+.hr {
+  color: #141414;
+  width: 100%;
+  border-bottom: 1px solid #141414;
+}

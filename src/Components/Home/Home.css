@@ -1,0 +1,171 @@
+.home-banner {
+  position: absolute;
+  top: 200px;
+  left: 420px;
+  display: flex;
+  width: fit-content;
+  img {
+    height: 440px;
+  }
+}
+
+.section-name {
+  display: flex;
+  align-items: center;
+  .side-div {
+    height: 14px;
+    border: 8px solid #db4444;
+    border-radius: 4px;
+  }
+  h3 {
+    color: #db4444;
+    padding: 0 15px;
+    font-size: 22px;
+  }
+}
+
+.section-title {
+  font-size: 30px;
+}
+
+.new-arrivals {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  padding: 20px 350px;
+}
+
+.new-arrival {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 50px 0;
+
+  .product-title {
+    font-weight: 600;
+    font-size: 25px;
+  }
+
+  .product-description {
+    color: #fafafa;
+  }
+
+  .shopnow-btn {
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 18px;
+    width: 84px;
+    border-bottom: 1px solid #808080;
+    cursor: pointer;
+  }
+}
+
+.section-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 20px;
+  color: white;
+  height: 600px;
+  width: 600px;
+  padding: 40px;
+  box-sizing: border-box;
+  background-image: url("/PS5.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-color: black;
+}
+.section-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  height: 600px;
+  width: 600px;
+
+  .top-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 20px;
+    color: white;
+    height: 50%;
+    height: 300px;
+    width: 600px;
+    padding: 40px;
+    box-sizing: border-box;
+    background-image: url("/WomenCollection.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-color: black;
+  }
+
+  .bottom-section {
+    display: flex;
+    height: 300px;
+    width: 600px;
+    gap: 30px;
+
+    .left-section {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      gap: 20px;
+      color: white;
+      height: 300px;
+      width: 300px;
+      padding: 40px;
+      box-sizing: border-box;
+      background-image: url("/Speaker.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: #191919;
+    }
+
+    .right-section {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      gap: 20px;
+      color: white;
+      height: 300px;
+      width: 300px;
+      padding: 40px;
+      box-sizing: border-box;
+      background-image: url("/Perfume.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: #191919;
+    }
+  }
+}
+
+.value-added-services {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 150px 450px;
+}
+
+.value-added-service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+
+  .service-image {
+    width: 100px;
+    margin-bottom: 20px;
+  }
+
+  .service-title {
+    font-weight: 600;
+    font-size: 22px;
+  }
+}
