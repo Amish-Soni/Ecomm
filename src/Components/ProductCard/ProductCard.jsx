@@ -9,30 +9,33 @@ import WhiteCart from "/WhiteCart.png";
 import FullStar from "/FullStar.png";
 import EmptyStar from "/EmptyStar.png";
 import HalfFullStar from "/HalfFullStar.png";
+import { Link } from "react-router-dom";
 
 const ProductCard = ({ product, wishlist }) => {
   return (
     <div className="product-card">
-      <div className="product-image-container">
-        <div className="discount-badge">40%</div>
-        <img src={ProductImage} alt="image" className="product-image" />
-        <div className="btns">
-          {wishlist ? (
-            <div className="delete-btn">
-              <img src={Delete} alt="" className="delete-img" />
-            </div>
-          ) : (
-            <>
-              <div className="wishlist-btn">
-                <img src={Heart} alt="" className="heart-img" />
+      <Link to="/productdetails" style={{ textDecoration: "none" }}>
+        <div className="product-image-container">
+          <div className="discount-badge">40%</div>
+          <img src={ProductImage} alt="image" className="product-image" />
+          <div className="btns">
+            {wishlist ? (
+              <div className="delete-btn">
+                <img src={Delete} alt="" className="delete-img" />
               </div>
-              <div className="view-btn">
-                <img src={View} alt="" className="view-img" />
-              </div>
-            </>
-          )}
+            ) : (
+              <>
+                <div className="wishlist-btn">
+                  <img src={Heart} alt="" className="heart-img" />
+                </div>
+                <div className="view-btn">
+                  <img src={View} alt="" className="view-img" />
+                </div>
+              </>
+            )}
+          </div>
         </div>
-      </div>
+      </Link>
       <div className="cart-btn">
         <img src={WhiteCart} alt="" className="cart-image" />
         Add To Cart
