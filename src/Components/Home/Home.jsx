@@ -1,7 +1,20 @@
 import React from "react";
+import { useState, useRef } from "react";
 import "./Home.css";
 import Sidebar from "../Sidebar/Sidebar";
 import HomeBanner from "/HomeBanner.png";
+
+import LeftArrow from "/LeftArrow.png";
+import RightArrow from "/RightArrow.png";
+
+import CategoryPhone from "/CategoryPhone.png";
+import CategoryComputer from "/CategoryComputer.png";
+import CategorySmartWatch from "/CategorySmartWatch.png";
+import CategoryCamera from "/CategoryCamera.png";
+import CategoryHeadphone from "/CategoryHeadphone.png";
+import CategoryGamepad from "/CategoryGamepad.png";
+
+import CategoriesBanner from "/CategoriesBanner.png";
 
 import DeliveryService from "/DeliveryService.png";
 import CustomerService from "/CustomerService.png";
@@ -9,6 +22,31 @@ import MoneyBackGuaranteeService from "/MoneyBackGuaranteeService.png";
 import ProductCard from "../ProductCard/ProductCard";
 
 const Home = () => {
+  const [scrollLeft, setScrollLeft] = useState(0);
+  const saleProductsContainerRef = useRef(null);
+
+  const handleScrollLeft = () => {
+    const container = saleProductsContainerRef.current;
+    if (container) {
+      container.scrollTo({
+        left: scrollLeft - 400,
+        behavior: "smooth",
+      });
+      setScrollLeft(scrollLeft - 400);
+    }
+  };
+
+  const handleScrollRight = () => {
+    const container = saleProductsContainerRef.current;
+    if (container) {
+      container.scrollTo({
+        left: scrollLeft + 400,
+        behavior: "smooth",
+      });
+      setScrollLeft(scrollLeft + 400);
+    }
+  };
+
   return (
     <>
       <Sidebar></Sidebar>
@@ -22,15 +60,79 @@ const Home = () => {
             <div className="side-div"></div>
             <h3 className="section-name">Today's</h3>
           </div>
-          <h2 className="section-title">Flash Sales</h2>
+          <div className="title-and-btn">
+            <h2 className="section-title">Flash Sales</h2>
+            <div className="scroll-btns">
+              <button className="scroll-btn" onClick={handleScrollLeft}>
+                <img src={LeftArrow} alt="" className="arrow-img" />
+              </button>
+              <button className="scroll-btn" onClick={handleScrollRight}>
+                <img src={RightArrow} alt="" className="arrow-img" />
+              </button>
+            </div>
+          </div>
+          <div className="sale-products" ref={saleProductsContainerRef}>
+            <div className="ProductCard">
+              <ProductCard></ProductCard>
+            </div>
+            <div className="ProductCard">
+              <ProductCard></ProductCard>
+            </div>
+            <div className="ProductCard">
+              <ProductCard></ProductCard>
+            </div>
+            <div className="ProductCard">
+              <ProductCard></ProductCard>
+            </div>
+            <div className="ProductCard">
+              <ProductCard></ProductCard>
+            </div>
+            <div className="ProductCard">
+              <ProductCard></ProductCard>
+            </div>
+            {/* <ProductCard></ProductCard>
+            <ProductCard></ProductCard>
+            <ProductCard></ProductCard>
+            <ProductCard></ProductCard>
+            <ProductCard></ProductCard> */}
+          </div>
+          <button className="view-all-products-btn">View All Products</button>
         </div>
 
         <div className="categories">
+          <div className="hr"></div>
           <div className="section-name">
             <div className="side-div"></div>
             <h3 className="section-name">Categories</h3>
           </div>
           <h2 className="section-title">Browse By Category</h2>
+          <div className="categories-list">
+            <div className="category">
+              <img src={CategoryPhone} alt="" className="category-image" />
+              <p>Phones</p>
+            </div>
+            <div className="category">
+              <img src={CategoryComputer} alt="" className="category-image" />
+              <p>Computers</p>
+            </div>
+            <div className="category">
+              <img src={CategorySmartWatch} alt="" className="category-image" />
+              <p>Smart Watch</p>
+            </div>
+            <div className="category">
+              <img src={CategoryCamera} alt="" className="category-image" />
+              <p>Camera</p>
+            </div>
+            <div className="category">
+              <img src={CategoryHeadphone} alt="" className="category-image" />
+              <p>Headphones</p>
+            </div>
+            <div className="category">
+              <img src={CategoryGamepad} alt="" className="category-image" />
+              <p>Gaming</p>
+            </div>
+          </div>
+          <div className="hr"></div>
         </div>
 
         <div className="month">
@@ -38,7 +140,23 @@ const Home = () => {
             <div className="side-div"></div>
             <h3 className="section-name">This Month</h3>
           </div>
-          <h2 className="section-title">Best Selling Products</h2>
+          <div className="title-and-btn">
+            <h2 className="section-title">Best Selling Products</h2>
+            <button className="view-all-btn">View All</button>
+          </div>
+          <div className="products">
+            <ProductCard></ProductCard>
+            <ProductCard></ProductCard>
+            <ProductCard></ProductCard>
+          </div>
+        </div>
+
+        <div className="categories-banner">
+          <img
+            src={CategoriesBanner}
+            alt=""
+            className="categories-banner-image"
+          />
         </div>
 
         <div className="products-section">

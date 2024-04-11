@@ -11,9 +11,19 @@
   flex-direction: column;
   gap: 35px;
 }
+
 .sidebar-item {
   display: flex;
   gap: 20px;
   justify-content: space-between;
   margin-top: 16px;
+}
+
+.sidebar-list-item {
+  cursor: pointer;
+  transition: all 0.25s;
+
+  &:hover {
+    scale: 1.05;
+  }
 }

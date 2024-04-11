@@ -3,6 +3,12 @@
   flex-direction: column;
   width: 300px;
   padding: 20px 0;
+  transition: all 0.25s;
+  cursor: pointer;
+
+  &:hover {
+    scale: 1.05;
+  }
 }
 
 .product-image-container {
