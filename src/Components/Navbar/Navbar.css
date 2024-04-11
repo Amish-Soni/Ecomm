@@ -16,6 +16,12 @@
   p {
     color: black;
     font-size: 18px;
+    transition: all 0.25s;
+
+    &:hover {
+      font-size: 22px;
+      font-weight: 600;
+    }
   }
 }
 
@@ -48,4 +54,44 @@
   align-items: center;
   justify-content: center;
   gap: 20px;
+  cursor: pointer;
+}
+
+.user-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #a49ba5f8;
+  color: rgba(255, 255, 255, 0.801);
+  padding: 20px;
+  position: absolute;
+  top: 145px;
+  right: 160px;
+  z-index: 1;
+  border-radius: 4px;
+
+  .menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .menu-list-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 18px;
+    transition: all 0.25s;
+
+    &:hover {
+      color: #ffffff;
+      scale: 1.05;
+    }
+
+    /* justify-content: center; */
+
+    .menu-item-image {
+      height: 25px;
+    }
+  }
 }

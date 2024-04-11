@@ -1,0 +1,78 @@
+.wishlist {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.title-and-btn {
+  margin-bottom: 50px;
+}
+
+.move-all-to-bag-btn {
+  width: 200px;
+  height: 50px;
+  font-size: 18px;
+  text-align: center;
+  align-self: center;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.5s;
+
+  &:hover {
+    background-color: #b3b3b3;
+  }
+}
+
+.wishlist-items {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  padding: 50px 350px;
+  margin-bottom: 100px;
+
+  .title {
+    font-size: 25px;
+  }
+}
+
+.wishlist-item-list {
+  display: flex;
+  gap: 60px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  /* padding: 50px 0; */
+}
+
+.just-for-you {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  padding: 50px 350px;
+  margin-bottom: 100px;
+
+  .section-name {
+    color: black;
+  }
+
+  .see-all-btn {
+    width: 150px;
+    height: 50px;
+    font-size: 18px;
+    text-align: center;
+    align-self: center;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.5s;
+
+    &:hover {
+      background-color: #b3b3b3;
+    }
+  }
+}

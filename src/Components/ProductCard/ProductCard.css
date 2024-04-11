@@ -50,7 +50,8 @@
 }
 
 .wishlist-btn,
-.view-btn {
+.view-btn,
+.delete-btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -65,7 +66,8 @@
 }
 
 .heart-img,
-.view-img {
+.view-img,
+.delete-img {
   object-fit: contain;
   width: 25px;
   padding: 10px;

@@ -108,9 +108,14 @@
   margin-top: 32px;
   padding: 16px 48px;
   color: #fafafa;
-  background-color: var(--Button2, #db4444);
+  background-color: #db4444;
   border: none;
   border-radius: 4px;
   font-weight: 500;
   cursor: pointer;
+  transition: all 0.25s;
+
+  &:hover {
+    background-color: #ff0000bd;
+  }
 }
