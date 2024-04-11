@@ -1,0 +1,132 @@
+.red-text {
+  color: #db4444;
+}
+
+.account-top-section {
+  display: flex;
+  justify-content: space-between;
+  margin: 80px 250px;
+  font-size: 20px;
+}
+
+.account {
+  display: flex;
+  justify-content: center;
+  gap: 150px;
+  margin-bottom: 150px;
+}
+
+.account-sidebar-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  .list-title {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 15px 0;
+  }
+
+  .list-items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 5px 30px;
+    cursor: pointer;
+
+    .list-item:hover {
+      color: #db4444;
+    }
+  }
+}
+
+.edit-profile {
+  .form-heading {
+    font-size: 20px;
+    font-weight: 600;
+    color: #db4444;
+    margin-bottom: 20px;
+  }
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 1px 13px 0px rgba(0, 0, 0, 0.05);
+  padding: 50px 60px;
+  width: 40%;
+
+  .edit-profile-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .name,
+  .email-address {
+    display: flex;
+
+    .input-field {
+      margin-right: 140px;
+    }
+  }
+
+  input {
+    margin: 10px 0;
+    width: 120%;
+    border: none;
+    padding: 15px;
+    height: 24px;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .password-change {
+    display: flex;
+    flex-direction: column;
+
+    input {
+      width: 90%;
+    }
+
+    label {
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+  }
+
+  .input-field {
+    display: flex;
+    gap: 10px;
+
+    label {
+      font-weight: 600;
+    }
+  }
+
+  .btns {
+    align-self: flex-end;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding-right: 60px;
+    justify-content: center;
+    align-items: center;
+
+    .cancel-btn,
+    .submit-btn {
+      font-size: 20px;
+    }
+
+    .cancel-btn {
+      margin-top: 32px;
+      padding: 16px 48px;
+      background-color: transparent;
+      border: none;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.25s;
+    }
+  }
+}
