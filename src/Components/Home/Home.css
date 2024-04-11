@@ -345,3 +345,24 @@
     font-size: 22px;
   }
 }
+
+@media (max-width: 400px) {
+  .home-banner {
+    top: 100px;
+    left: 170px;
+
+    img {
+      height: 200px;
+    }
+  }
+
+  .home {
+    padding: 0;
+  }
+
+  .todays {
+    gap: 5px;
+    padding: 10px 40px;
+    margin-top: 9px;
+  }
+}

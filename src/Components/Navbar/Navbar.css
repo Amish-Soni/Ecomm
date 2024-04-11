@@ -95,3 +95,38 @@
     }
   }
 }
+
+@media (max-width: 400px) {
+  .navbar {
+    height: 60px;
+  }
+
+  .navbar-links {
+    gap: 10px;
+
+    p {
+      font-size: 14px;
+
+      &:hover {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .navbar-right-section {
+    gap: 20px;
+  }
+
+  .navbar-search-bar {
+    gap: 5px;
+    padding: 8px;
+  }
+
+  .navbar-icons {
+    gap: 10px;
+  }
+
+  .navbar-company-name {
+    font-size: 20px;
+  }
+}
